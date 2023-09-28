@@ -42,7 +42,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: var(--lightgrayz);
+    color: var(--lightgray);
 }
 
 ::placeholder {
