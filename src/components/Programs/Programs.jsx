@@ -12,8 +12,8 @@ function Programs() {
             </div>
 
             <div className="program-categories">
-                {programsData.map((item) => (
-                    <div className="category">
+                {programsData.map((item, ind) => (
+                    <div className="category" key={ind}>
                         {item.image}
                         <span>{item.heading}</span>
                         <span>{item.details}</span>

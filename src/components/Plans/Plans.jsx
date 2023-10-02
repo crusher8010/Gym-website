@@ -13,7 +13,7 @@ function Plans() {
                 <span className='stroke-text'>WITH US</span>
             </div>
 
-            <div className="plans">
+            <div className="plans" id="plans">
                 {plansData.map((item, i) => (
                     <div className="plan" key={i}>
                         {item.icon}
@@ -22,7 +22,7 @@ function Plans() {
 
                         <div className="features">
                             {item.features.map((feature, i) => (
-                                <div className="feature">
+                                <div className="feature" key={i}>
                                     <img src={whiteTick} alt="" />
                                     <span key={i}>{feature}</span>
                                 </div>
