@@ -5,6 +5,7 @@ import hero_image_back from '../../assets/hero_image_back.png';
 import Heart from '../../assets/heart.png';
 import Calories from '../../assets/calories.png';
 
+import NumberCounter from 'number-counter';
 import { motion } from 'framer-motion';
 
 function Hero() {
@@ -41,15 +42,21 @@ function Hero() {
 
                 <div className='figures'>
                     <div>
-                        <span>+140</span>
+                        <span style={{ display: 'flex' }}>
+                            +<NumberCounter end={140} start={100} duration='3' />
+                        </span>
                         <span>expert coaches</span>
                     </div>
                     <div>
-                        <span>+978</span>
+                        <span style={{ display: 'flex' }}>
+                            +<NumberCounter end={978} start={800} duration='3' />
+                        </span>
                         <span>members joined</span>
                     </div>
                     <div>
-                        <span>+50</span>
+                        <span style={{ display: 'flex' }}>
+                            +<NumberCounter end={50} start={0} duration='2' />
+                        </span>
                         <span>fitness programs</span>
                     </div>
                 </div>
